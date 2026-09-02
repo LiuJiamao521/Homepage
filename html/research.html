@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research · Jiamao Liu</title>
+<meta name="description" content="Research of Jiamao Liu: computational methods for single-cell and spatial multi-omics.">
+<link rel="icon" href="./image/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="./image/apple-touch-icon.png">
+<link rel="icon" href="./image/android-chrome-192x192.png" sizes="192x192" type="image/png">
+<link rel="stylesheet" href="style.css?v=2032">
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a class="nav-name" href="index.html">Jiamao Liu</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('m').classList.toggle('open')">☰</button>
+    <div class="nav-links" id="m">
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="activity.html">Activity</a>
+      <a href="cv.html">CV</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-head wrap">
+  <div class="sec-label">Research</div>
+  <h1>Research</h1>
+  <p>My work sits between statistics, machine learning and biology. It currently centers on two areas — single-cell and spatial multi-omics — with a growing interest in AI methods that make genomic analyses more reliable and reproducible.</p>
+</div>
+
+<main class="wrap">
+
+  <section>
+    <div class="themes">
+
+      <div class="theme">
+        <h3><span class="n">01</span> Single-cell multi-omics</h3>
+        <p>Modern single-cell assays measure several layers of biology in the same cell — gene expression, chromatin accessibility, and beyond. Each layer tells part of the story, and the interesting question is how to read them together into one coherent picture of what a cell is doing.</p>
+        <p>I develop and apply computational methods that integrate these layers, so that gene-regulatory programs can be studied as a whole rather than one modality at a time, and so that rare but important cell states are not lost in the noise.</p>
+        <div class="tags"><span class="tag">scRNA-seq</span><span class="tag">Multiome / ATAC</span><span class="tag">Data integration</span><span class="tag">Gene regulation</span></div>
+      </div>
+
+      <div class="theme">
+        <h3><span class="n">02</span> Spatial multi-omics</h3>
+        <p>Spatial multi-omics measures biology while keeping the position of each cell in the tissue — not only gene expression but also chromatin accessibility, histone marks and other regulatory layers, each resolved in place.</p>
+        <p>I work on making these measurements usable in practice: handling the sparsity and noise that come with spatial data, identifying spatial domains that are stable across samples and platforms, and linking spatial regulatory signals — such as enhancer activity — back to gene expression and tissue organization.</p>
+        <div class="tags"><span class="tag">Spatial domains</span><span class="tag">Spatial ATAC-seq</span><span class="tag">Spatial epigenomics</span><span class="tag">Tissue architecture</span></div>
+      </div>
+
+      <div class="theme">
+        <h3><span class="n">03</span> AI &amp; statistics for genomics</h3>
+        <p>I am increasingly interested in applying modern machine learning — including large language models — to genomic problems in a way that is dependable rather than black-box.</p>
+        <p>That means benchmarking methods honestly, quantifying uncertainty, and building open, reproducible tools that other labs can actually use.</p>
+        <div class="tags"><span class="tag">Benchmarking</span><span class="tag">Uncertainty</span><span class="tag">Reproducibility</span><span class="tag">Open source</span></div>
+      </div>
+
+    </div>
+    <p class="muted" style="margin-top:22px;font-size:.97rem"><b>Where I am headed:</b> I want to bring these threads together — methods that combine single-cell and spatial measurements with uncertainty-aware machine learning, so that a model&rsquo;s confidence can be trusted alongside its predictions.</p>
+  </section>
+
+  <section>
+    <div class="sec-label">Code</div>
+    <h2>Software &amp; open source</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>HSC</h3>
+        <p>Analysis code for the human spinal cord developmental atlas — a multi-omics atlas integrating single-cell and spatial measurements across seven developmental stages (Huang Lab).</p>
+        <div class="plinks"><a href="https://github.com/xmuhuanglab/Human_spinal_cord" target="_blank">GitHub &rsaquo;</a></div>
+      </div>
+      <div class="card">
+        <h3>eSpatial</h3>
+        <p>A computational framework that decodes spatially resolved enhancer regulation on gene expression by integrating spatial gene expression with chromatin accessibility (Huang Lab).</p>
+        <div class="plinks"><a href="https://github.com/xmuhuanglab/eSpatial" target="_blank">GitHub &rsaquo;</a></div>
+      </div>
+      <div class="card">
+        <h3>SpaATAC-link</h3>
+        <p>A two-stage R and Python workflow that links spatial RNA to paired multiome RNA cells and places their matching ATAC profiles onto the complete spatial grid.</p>
+        <div class="plinks"><a href="https://github.com/LiuJiamao521/SpaATAC-link" target="_blank">GitHub &rsaquo;</a></div>
+      </div>
+      <div class="card">
+        <h3>prompt-for-bioinformatics</h3>
+        <p>A collection of curated prompts for steering large language models toward useful, well-scoped bioinformatics tasks.</p>
+        <div class="plinks"><a href="https://github.com/LiuJiamao521/prompt-for-bioinformatics" target="_blank">GitHub &rsaquo;</a></div>
+      </div>
+      <div class="card">
+        <h3>translate_code</h3>
+        <p>A CLI tool that translates Chinese text in code comments and Python docstrings, so that mixed-language codebases stay readable for everyone.</p>
+        <div class="plinks"><a href="https://github.com/LiuJiamao521/translate_code" target="_blank">GitHub &rsaquo;</a></div>
+      </div>
+      <div class="card add">
+        <h3>More to come</h3>
+        <p>More and more projects will be made public here as they are released.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-label">Context</div>
+    <h2>Where I work</h2>
+    <p class="muted">I am a graduate student in the <a href="https://huanglab.xmu.edu.cn/" target="_blank">Jialiang Huang Lab</a> at the School of Life Sciences, Xiamen University. The group develops single-cell and genomic technologies and applies them to questions in gene regulation, development and disease. Within that environment I sit on the computational side, building and benchmarking the analyses that turn raw single-cell and spatial measurements into biological insight.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="y"></span> Jiamao Liu &middot; Single-cell &amp; Spatial Omics &middot; Xiamen University</div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  document.querySelectorAll('.nav-links a').forEach(function (a) {
+    a.addEventListener('click', function () { document.getElementById('m').classList.remove('open'); });
+  });
+</script>
+</body>
+</html>

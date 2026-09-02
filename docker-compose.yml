@@ -1,0 +1,14 @@
+version: '3'
+services:
+  static-site:
+    image: nginx:alpine
+    volumes:
+      - ./static:/usr/share/nginx/static
+      - ./html:/usr/share/nginx/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./ssl/jiamao-liu.com.pem:/etc/ssl/private/jiamao-liu.com.pem  # 挂载证书
+      - ./ssl/jiamao-liu.com.key:/etc/ssl/private/jiamao-liu.com.key      # 挂载私钥
+    ports:
+      - "80:80"
+      - "443:443"  # 新增443端口映射
+    restart: always    

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications · Jiamao Liu</title>
+<meta name="description" content="Publications of Jiamao Liu in computational biology and bioinformatics.">
+<link rel="icon" href="./image/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="./image/apple-touch-icon.png">
+<link rel="icon" href="./image/android-chrome-192x192.png" sizes="192x192" type="image/png">
+<link rel="stylesheet" href="style.css?v=2032">
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a class="nav-name" href="index.html">Jiamao Liu</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('m').classList.toggle('open')">☰</button>
+    <div class="nav-links" id="m">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html" class="active">Publications</a>
+      <a href="activity.html">Activity</a>
+      <a href="cv.html">CV</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-head wrap">
+  <div class="sec-label">Publications</div>
+  <h1>Publications</h1>
+  <p>Publications are listed on a timeline. In the author lists the name of the site author (<b>Liu, J.</b>) is shown in bold; <sup>+</sup> denotes equal contribution (co-first author) and <sup>*</sup> denotes the corresponding author.</p>
+</div>
+
+<main class="wrap">
+
+  <section>
+    <div class="timeline">
+
+      <div class="tl-year">In submission</div>
+
+      <article class="pub-card">
+        <div class="pub-title">Decoding the spatiotemporal and epigenetic principles underlying human spinal cord development</div>
+        <div class="pub-authors">Shu, M.<sup>+,*</sup>, <b>Liu, J.</b><sup>+</sup>, Wang, M.<sup>+</sup>, Chen, Z.<sup>+</sup>, Xu, C., Zhang, Q., Hong, D., Zhang, Y., Li, Y., Kuang, W., Lin, H., Wei, Y., Liu, L., Xu, B., Cheng, H., Duan, L., Xue, X., Chen, B., Xiao, Z., Zhao, Y., Huang, J.<sup>*</sup>, Dai, J.<sup>*</sup>, Lu, F.<sup>*</sup></div>
+        <p class="pub-summary">A developmental multi-omics atlas of the human spinal cord, integrating more than 74,000 single-cell transcriptomes with chromatin-accessibility and spatial transcriptomics across seven developmental stages, to uncover lineage-specific enhancer&ndash;gene regulation.</p>
+        <div class="pub-foot">
+          <div class="pub-links"></div>
+          <div class="pub-flags"><span class="flag submitted">Submitted</span></div>
+        </div>
+      </article>
+
+      <div class="tl-year">2025</div>
+
+      <article class="pub-card">
+        <div class="pub-title">Divergent combinations of enhancers encode spatial gene expression</div>
+        <div class="pub-authors">Hong, D.<sup>+</sup>, Shu, M.<sup>+</sup>, <b>Liu, J.</b><sup>+</sup>, Liu, L., Cheng, H., Zhu, M., Du, Y., Xu, B., Hu, D., Liu, Z., Zhao, Y., Dai, J.<sup>*</sup>, Lu, F.<sup>*</sup>, Huang, J.<sup>*</sup></div>
+        <div class="pub-venue">Nature Communications, 16, 5091 (2025)</div>
+        <p class="pub-summary">Shows that divergent combinations of enhancers encode spatially restricted gene expression during tissue development &mdash; a &ldquo;spatial enhancer code&rdquo; &mdash; by integrating spatial transcriptomics with epigenomic profiling and experimental validation.</p>
+        <div class="pub-foot">
+          <div class="pub-links">
+            <a href="https://doi.org/10.1038/s41467-025-60482-1" target="_blank">DOI &rsaquo;</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/40456823/" target="_blank">PubMed &rsaquo;</a>
+          </div>
+          <div class="pub-flags"><span class="flag published">Published</span></div>
+        </div>
+      </article>
+
+      <article class="pub-card">
+        <div class="pub-title">Super-CUT&amp;Tag: A Sensitive, Spatially Resolved Approach for Epigenomic Profiling in Tissue Sections</div>
+        <div class="pub-authors">Zhu, M.<sup>+</sup>, Zha, Z.<sup>+</sup>, Xuan, J., Zhao, H., Dai, J., <b>Liu, J.</b>, Xia, Y., Lin, H., Yang, Y., Chen, F., Lin, S., Liu, X., Wu, L., Zhu, Z., Huang, J.<sup>*</sup>, Zhang, H.<sup>*</sup>, Yang, C.<sup>*</sup></div>
+        <div class="pub-venue">bioRxiv (2025)</div>
+        <p class="pub-summary">A new spatial epigenomics assay that profiles protein&ndash;DNA interactions directly in tissue sections, with several-fold higher capture efficiency and a simpler, more reproducible workflow than earlier spatial CUT&amp;Tag methods.</p>
+        <div class="pub-foot">
+          <div class="pub-links">
+            <a href="https://doi.org/10.64898/2025.12.08.692886" target="_blank">bioRxiv DOI &rsaquo;</a>
+          </div>
+          <div class="pub-flags"><span class="flag preprint">Preprint</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="y"></span> Jiamao Liu &middot; Single-cell &amp; Spatial Omics &middot; Xiamen University</div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  document.querySelectorAll('.nav-links a').forEach(function (a) {
+    a.addEventListener('click', function () { document.getElementById('m').classList.remove('open'); });
+  });
+</script>
+</body>
+</html>

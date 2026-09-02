@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curriculum Vitae · Jiamao Liu</title>
+<meta name="description" content="Curriculum vitae of Jiamao Liu.">
+<link rel="icon" href="./image/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="./image/apple-touch-icon.png">
+<link rel="icon" href="./image/android-chrome-192x192.png" sizes="192x192" type="image/png">
+<link rel="stylesheet" href="style.css?v=2032">
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a class="nav-name" href="index.html">Jiamao Liu</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('m').classList.toggle('open')">☰</button>
+    <div class="nav-links" id="m">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="activity.html">Activity</a>
+      <a href="cv.html" class="active">CV</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="sec-label" style="margin-top:30px">Curriculum Vitae</div>
+  <div class="cv-headline">
+    <div>
+      <h1>Jiamao Liu</h1>
+      <div class="cv-meta">Resume &middot; latest version hosted on this site</div>
+    </div>
+    <div class="cv-actions">
+      <a class="btn primary" href="JLiu_s_resume.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+        Download PDF
+      </a>
+      <a class="btn" href="JLiu_s_resume.pdf" target="_blank">Open in new tab</a>
+    </div>
+  </div>
+
+  <div class="viewer">
+    <embed src="JLiu_s_resume.pdf" type="application/pdf" />
+  </div>
+
+  <p class="cv-fallback">If the preview does not load in your browser, <a href="JLiu_s_resume.pdf" target="_blank">open the PDF directly</a>.</p>
+</div>
+
+<footer>
+  <div class="wrap">&copy; <span id="y"></span> Jiamao Liu &middot; Curriculum Vitae</div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  document.querySelectorAll('.nav-links a').forEach(function (a) {
+    a.addEventListener('click', function () { document.getElementById('m').classList.remove('open'); });
+  });
+</script>
+</body>
+</html>
